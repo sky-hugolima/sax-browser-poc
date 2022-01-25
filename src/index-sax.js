@@ -3,7 +3,7 @@ async function loadAndParseWithSAX() {
     const stopFpsMonitor = startRenderTimeMonitoring();
     const initialMemorySize = performance.memory.totalJSHeapSize;
     performance.mark('fetch_start');
-    const response = await fetch('master.mpd');
+    const response = await fetchStream('master.mpd');
     performance.mark('fetch_ready');
 
     const reader = response.body.getReader();
