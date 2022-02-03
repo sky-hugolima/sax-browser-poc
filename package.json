@@ -15,7 +15,9 @@
     "@babel/preset-env": "^7.16.11"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "fetch-readablestream": "^0.2.0",
+    "performance-polyfill": "^0.0.3",
     "web-streams-polyfill": "^3.2.0"
   }
 }

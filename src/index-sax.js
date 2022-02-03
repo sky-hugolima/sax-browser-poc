@@ -25,6 +25,7 @@ async function loadAndParseWithSAX() {
             performance.mark('parser_done');
             return;
         }
+        console.log('chunk ready');
         const str = textDecoder.decode(r.value);
         parser.write(str);
         
